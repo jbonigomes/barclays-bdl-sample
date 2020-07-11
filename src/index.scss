@@ -1,0 +1,29 @@
+$breakpoint: 768px;
+
+$white: #FFFFFF;
+$black: #151515;
+$shadow: rgba(0, 0, 0, 0.06);
+
+$light-grey: #F7F7F7;
+$medium-grey: #E5EBEE;
+$grey: #8C8C8C;
+$dark-grey: #333333;
+
+$light-blue: #F2FBFE;
+$medium-blue: #0076B6;
+$blue: #005E91;
+$dark-blue: #00395D;
+
+@font-face {
+  font-family: 'ExpertSans-Bold';
+  src: local('ExpertSans-Bold'),
+    url(./fonts/expert-sans-bold.woff) format('woff'),
+    url(./fonts/expert-sans-bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'ExpertSans-Light';
+  src: local('ExpertSans-Light'),
+    url(./fonts/expert-sans-light.woff) format('woff'),
+    url(./fonts/expert-sans-light.woff2) format('woff2');
+}

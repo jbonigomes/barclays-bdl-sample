@@ -1,0 +1,26 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import Button from '../../components/Button'
+
+<Meta title="Button" />
+
+# Preview
+
+Primary disabled small buttons have a min width.
+
+<Preview>
+  <Story name="13 - Primary disabled small button min width">
+    <Button
+      small
+      disabled
+      text="Yes"
+      type="primary"
+      onClick={action('clicked')}
+    />
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Button} />

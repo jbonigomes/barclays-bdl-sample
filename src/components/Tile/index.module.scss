@@ -1,0 +1,19 @@
+@import '../../index.scss';
+
+.tile {
+  overflow: hidden;
+  color: $dark-grey;
+  background: $white;
+  border-radius: 8px;
+  border: 1px solid $medium-grey;
+  font-family: 'ExpertSans-light';
+
+  b {
+    color: $black;
+    font-family: 'ExpertSans-bold';
+  }
+
+  &:hover {
+    box-shadow: 0 2px 8px 2px $shadow;
+  }
+}

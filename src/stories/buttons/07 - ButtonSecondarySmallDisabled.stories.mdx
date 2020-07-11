@@ -1,0 +1,26 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import Button from '../../components/Button'
+
+<Meta title="Button" />
+
+# Preview
+
+Disabled buttons are not interactive.
+
+<Preview>
+  <Story name="07 - Disabled small secondary button">
+    <Button
+      small
+      disabled
+      type="secondary"
+      onClick={action('clicked')}
+      text="CTA character limit 20-25"
+    />
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Button} />

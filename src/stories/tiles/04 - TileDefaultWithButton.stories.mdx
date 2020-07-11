@@ -1,0 +1,32 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import promoImage from '../../images/promo_image.png'
+import TileDefault from '../../components/TileDefault'
+
+<Meta title="Tiles" />
+
+# Preview
+
+When passing both `buttonText` and `onButtonClick` props, default tiles will
+render a second call to action in the form of a button in the bottom of the tile.
+
+<Preview>
+  <Story name="04 - Default tile with button">
+    <TileDefault
+      image={promoImage}
+      buttonText="Call to action"
+      title="1st card title goes here"
+      onTitleClick={action('clicked')}
+      onButtonClick={action('clicked')}
+    >
+      Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor
+      urna. Ut laoreet sodales nisi, nex quis iaculi. Vestibulum rutrum quam
+      vitae fringilla tincidunt. Suspendisse romani.
+    </TileDefault>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={TileDefault} />

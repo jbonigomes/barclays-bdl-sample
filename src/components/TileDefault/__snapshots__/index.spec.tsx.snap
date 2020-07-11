@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="tile"
+  >
+    <div
+      className="cover"
+    >
+      <img
+        alt="Tile graphic"
+        src="image"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div>
+        <button
+          className="lead "
+          onClick={[MockFunction]}
+        >
+          title
+        </button>
+      </div>
+      <div>
+        Foo
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Match snapshot with button 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="tile"
+  >
+    <div
+      className="cover"
+    >
+      <img
+        alt="Tile graphic"
+        src="image"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div>
+        <button
+          className="lead "
+          onClick={[MockFunction]}
+        >
+          title
+        </button>
+      </div>
+      <div>
+        Foo
+      </div>
+      <button
+        className="primary button  "
+        onClick={[MockFunction]}
+      >
+        buttonText
+      </button>
+    </div>
+  </div>
+</div>
+`;

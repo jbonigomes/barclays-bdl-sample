@@ -1,44 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Barclays BDL Sample
 
-## Available Scripts
+This is a sample of a few hand-picked components from the Barclays Design
+Language (BDL)
 
-In the project directory, you can run:
+# Getting started
 
-### `npm start`
+`
+$ npm install
+$ npm run storybook
+`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Notes
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Those examples were built to work on Google Chrome, Firefox, Opera and Safari
+running on Mac OSX; Safari on iOS and Chrome on Android
 
-### `npm test`
+- Designs take a mobile first approach, for illustration and simplicity, a
+breakpoint of 768px has been created, any screen narrower than that will be
+considered a mobile, anything wider will be considered a desktop.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Actions plugin
 
-### `npm run build`
+- Explain docs plugin
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Explain viewport plugin
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Structural testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Structural testing was achieved with Jest snapshots, every component was
+carefully to be completely stateless, hence, snapshots alone can cover all
+posible alternatives.
 
-### `npm run eject`
+# Test coverage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Jest's built in Istanbul test coverage was used to achieve 100% test coverage on
+this project. They are mostly structural tests written in the format of
+snapshots, with the exception of one unit test and one spy test, both sitting on
+the entry point of this application.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Accessibility (A11y) testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Accessibility tests were covered using
+[https://accessibilityinsights.io/en/](accessibilityinsights). The report can be
+found in the root of this project
+[./accessibility-report.pdf](accessibility-report.pdf)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+A11y was carried out separated from Storybook, this page can be viewed using
+`$ npm start`
 
-## Learn More
+# Visual regression
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Happo was chosen for the visual regression tests, it uses a separate page (from
+Storybook) to take all snapshots, this page can be accessed with `$ npm start`

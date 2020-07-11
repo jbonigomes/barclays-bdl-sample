@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+.container {
+  width: 300px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-family: 'ExpertSans-Light';
+
+  img {
+    margin-bottom: 16px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $breakpoint) {
+    width: 444px;
+    text-align: left;
+
+    img {
+      margin-bottom: 0;
+    }
+
+    button {
+      width: auto;
+      margin-top: 16px;
+    }
+
+    .content {
+      flex-direction: row;
+    }
+
+    .left {
+      display: flex;
+      flex: 0 0 104px;
+      align-items: center;
+    }
+  }
+}

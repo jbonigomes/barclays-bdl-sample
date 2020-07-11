@@ -1,0 +1,176 @@
+@import '../../index.scss';
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  overflow: hidden;
+  min-width: 140px;
+  max-width: 240px;
+  background: none;
+  line-height: 24px;
+  letter-spacing: 0;
+  position: relative;
+  white-space: nowrap;
+  border-radius: 24px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  font-family: 'ExpertSans-Light';
+
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-bottom: -2px;
+  }
+}
+
+.primary {
+  color: $white;
+  padding: 11px 29px;
+  background: $medium-blue;
+  border: 1px solid $medium-blue;
+
+  svg {
+    fill: $white;
+  }
+
+  &:focus {
+    background: $medium-blue;
+
+    &:before {
+      top: 2px;
+      left: 2px;
+      right: 2px;
+      bottom: 2px;
+      content: ' ';
+      position: absolute;
+      border-radius: 24px;
+      border: 2px solid $white;
+    }
+  }
+
+  &:hover {
+    background: $blue;
+    border-color: $blue;
+
+    &:before {
+      border: none;
+    }
+  }
+
+  &:active {
+    background: $dark-blue;
+    border-color: $dark-blue;
+
+    &:before {
+      border: none;
+    }
+  }
+
+  &:disabled {
+    color: $grey;
+    border-color: $grey;
+    background: $light-grey;
+
+    svg {
+      fill: $grey;
+    }
+  }
+}
+
+.secondary {
+  background: $white;
+  padding: 11px 29px;
+  color: $medium-blue;
+  border: 1px solid $medium-blue;
+
+  svg {
+    fill: $medium-blue;
+  }
+
+  &:focus {
+    background: $white;
+    color: $medium-blue;
+    border-color: $medium-blue;
+
+    svg {
+      fill: $medium-blue;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: ' ';
+      position: absolute;
+      border-radius: 24px;
+      border: 1px solid $medium-blue;
+    }
+  }
+
+  &:hover {
+    background: $light-blue;
+
+    svg {
+      fill: $medium-blue;
+    }
+
+    &:before {
+      border: none;
+    }
+  }
+
+  &:active {
+    color: $blue;
+    background: $white;
+    border-color: $blue;
+
+    svg {
+      fill: $blue;
+    }
+
+    &:before {
+      border: none;
+    }
+  }
+
+  &:disabled {
+    color: $grey;
+    border-color: $grey;
+    background: $light-grey;
+
+    svg {
+      fill: $grey;
+    }
+  }
+}
+
+.small {
+  padding: 3px 23px;
+}
+
+.linkOnDesktop {
+  @media (min-width: $breakpoint) {
+    padding: 0;
+    width: auto;
+    border: none;
+    min-width: auto;
+    background: none;
+    text-align: left;
+    text-decoration: underline;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $dark-blue;
+      background: none;
+
+      &:before {
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@import '../../index.scss';
+
+.quickLink {
+  width: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  background: none;
+  line-height: 22px;
+  text-align: center;
+  color: $medium-blue;
+  font-family: 'ExpertSans-Light';
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: $medium-blue;
+  }
+
+  div {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    background: $white;
+    position: relative;
+    align-items: center;
+    border-radius: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0 auto 11px auto;
+    border: 1px solid $medium-blue;
+  }
+
+  &:focus {
+    color: $dark-blue;
+    text-decoration: underline;
+
+    svg {
+      fill: $dark-blue;
+    }
+
+    div {
+      background: $light-blue;
+      border-color: $medium-blue;
+
+      &:before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: ' ';
+        position: absolute;
+        border-radius: 100%;
+        border: 1px solid $medium-blue;
+      }
+    }
+  }
+
+  &:hover {
+    color: $medium-blue;
+    text-decoration: underline;
+
+    svg {
+      fill: $medium-blue;
+    }
+
+    div {
+      background: $light-blue;
+      border-color: $medium-blue;
+
+      &:before {
+        border: none;
+      }
+    }
+  }
+
+  &:active {
+    color: $dark-blue;
+    text-decoration: underline;
+
+    svg {
+      fill: $dark-blue;
+    }
+
+    div {
+      background: $light-blue;
+      border-color: $dark-blue;
+
+      &:before {
+        border: none;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint) {
+    width: 150px;
+    font-size: 18px;
+    line-height: 24px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    div {
+      width: 72px;
+      height: 72px;
+      margin-bottom: 8px;
+    }
+  }
+}

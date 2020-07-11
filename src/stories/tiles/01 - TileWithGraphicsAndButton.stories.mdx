@@ -1,0 +1,30 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import graphic from '../../images/graphic_1.png'
+import TileWithGraphics from '../../components/TileWithGraphics'
+
+<Meta title="Tiles" />
+
+# Preview
+
+When passing both `onClick` and `buttonText` props, a call to action button will
+render in the bottom of the tile. On desktop, this button will be styled as a
+link.
+
+<Preview>
+  <Story name="01 - Tile with graphics and button">
+    <TileWithGraphics
+      image={graphic}
+      buttonText="View demo"
+      title="See our tutorial"
+      onClick={action('clicked')}
+    >
+      Step by step illustrations on how to use Online Banking
+    </TileWithGraphics>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={TileWithGraphics} />

@@ -1,0 +1,24 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import QuickLink from '../../components/QuickLink'
+
+<Meta title="QuickLink" />
+
+# Preview
+
+QuickLink with transfer icon
+
+<Preview>
+  <Story name="01 - QuickLink with transfer icon">
+    <QuickLink
+      icon="transfer"
+      text="Make a transfer"
+      onClick={action('clicked')}
+    />
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={QuickLink} />

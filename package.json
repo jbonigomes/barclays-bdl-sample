@@ -1,7 +1,16 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "barclays-bdl-sample",
+  "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "happo": "happo",
+    "start": "react-scripts start",
+    "storybook": "start-storybook -p 9009",
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "test:snapshots": "react-scripts test --updateSnapshot --watchAll=false",
+    "lint": "tslint -t codeFrame -p tsconfig.json -c tslint.json"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -10,16 +19,20 @@
     "@types/node": "^12.12.48",
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-test-renderer": "^16.13.1",
     "typescript": "^3.7.5"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-create-react-app": "^3.1.3",
+    "@storybook/react": "^5.3.19"
   },
   "eslintConfig": {
     "extends": "react-app"

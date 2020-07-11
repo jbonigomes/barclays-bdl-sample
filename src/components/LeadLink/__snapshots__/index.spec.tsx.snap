@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match snapshot 1`] = `
+<div>
+  <button
+    className="lead "
+    onClick={[MockFunction]}
+  >
+    text
+  </button>
+</div>
+`;
+
+exports[`Match snapshot with light colour on hover 1`] = `
+<div>
+  <button
+    className="lead lightHover"
+    onClick={[MockFunction]}
+  >
+    text
+  </button>
+</div>
+`;

@@ -1,0 +1,32 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import logo from '../../images/logo.png'
+import promoImage from '../../images/promo_image.png'
+import TileWithBadge from '../../components/TileWithBadge'
+
+<Meta title="Tiles" />
+
+# Preview
+
+When passing both `buttonText` and `onButtonClick` props, tile will render a
+second call to action in the form of a button in the bottom of the card.
+
+<Preview>
+  <Story name="06 - Tile with badge and button">
+    <TileWithBadge
+      badge={logo}
+      image={promoImage}
+      title="Cashback"
+      buttonText="Call to action"
+      onTitleClick={action('clicked')}
+      onButtonClick={action('clicked')}
+    >
+      Get cashback when shopping at participant retailers
+    </TileWithBadge>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={TileWithBadge} />

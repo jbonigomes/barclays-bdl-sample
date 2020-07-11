@@ -1,0 +1,24 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import Button from '../../components/Button'
+
+<Meta title="Button" />
+
+# Preview
+
+Buttons have a max width
+
+<Preview>
+  <Story name="24 - Primary button max width">
+    <Button
+      type="primary"
+      onClick={action('clicked')}
+      text="CTA CTA character limit 20-25"
+    />
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Button} />

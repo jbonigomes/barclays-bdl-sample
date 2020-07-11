@@ -1,0 +1,27 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import graphic from '../../images/graphic_2.png'
+import TileWithGraphics from '../../components/TileWithGraphics'
+
+<Meta title="Tiles" />
+
+# Preview
+
+Tile with graphics
+
+<Preview>
+  <Story name="00 - Tile with graphics">
+    <TileWithGraphics
+      image={graphic}
+      title="Speed up login"
+    >
+      Save your details on the login screen and you'll only need your PINsentry
+      device and card to login
+    </TileWithGraphics>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={TileWithGraphics} />

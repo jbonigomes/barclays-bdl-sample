@@ -1,0 +1,29 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import logo from '../../images/logo.png'
+import promoImage from '../../images/promo_image.png'
+import TileWithBadge from '../../components/TileWithBadge'
+
+<Meta title="Tiles" />
+
+# Preview
+
+Those tiles have a call to action within the title.
+
+<Preview>
+  <Story name="05 - Tile with badge">
+    <TileWithBadge
+      badge={logo}
+      image={promoImage}
+      title="Cashback"
+      onTitleClick={action('clicked')}
+    >
+      Get cashback when shopping at participant retailers
+    </TileWithBadge>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={TileWithBadge} />

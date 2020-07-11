@@ -1,0 +1,26 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import Button from '../../components/Button'
+
+<Meta title="Button" />
+
+# Preview
+
+Primary small button with icon
+
+<Preview>
+  <Story name="20 - Primary small button with icon">
+    <Button
+      small
+      type="primary"
+      icon="transfer"
+      text="Button with icon"
+      onClick={action('clicked')}
+    />
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Button} />

@@ -1,0 +1,27 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import graphic from '../../images/graphic_3.png'
+import TileSmall from '../../components/TileSmall'
+
+<Meta title="Tiles" />
+
+# Preview
+
+Small tiles remain the same size on desktop and mobile.
+
+<Preview>
+  <Story name="02 - Small tile">
+    <TileSmall
+      image={graphic}
+      title="Overdraft"
+      onClick={action('clicked')}
+    >
+      Get an overdraft of up to <b>£2,000</b>
+    </TileSmall>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={TileSmall} />

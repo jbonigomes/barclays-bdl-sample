@@ -211,7 +211,29 @@ const App: React.SFC<AppProps> = ({ onClick }: AppProps) => (
     </div>
 
     <div className={styles.row}>
+      <TileWithGraphics
+        headerLevel={6}
+        image={graphic2}
+        title="Speed up login"
+      >
+        Save your details on the login screen and you'll only need your
+        PINsentry device and card to login
+      </TileWithGraphics>
+    </div>
+
+    <div className={styles.row}>
       <TileSmall
+        image={graphic3}
+        title="Overdraft"
+        onClick={onClick}
+      >
+        Get an overdraft of up to <b>£2,000</b>
+      </TileSmall>
+    </div>
+
+    <div className={styles.row}>
+      <TileSmall
+        headerLevel={6}
         image={graphic3}
         title="Overdraft"
         onClick={onClick}
@@ -247,6 +269,19 @@ const App: React.SFC<AppProps> = ({ onClick }: AppProps) => (
     </div>
 
     <div className={styles.row}>
+      <TileDefault
+        headerLevel={6}
+        image={promoImage}
+        title="1st card title goes here"
+        onTitleClick={onClick}
+      >
+        Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor
+        urna. Ut laoreet sodales nisi, nex quis iaculi. Vestibulum rutrum quam
+        vitae fringilla tincidunt. Suspendisse romani.
+      </TileDefault>
+    </div>
+
+    <div className={styles.row}>
       <TileWithBadge
         badge={logo}
         image={promoImage}
@@ -262,6 +297,18 @@ const App: React.SFC<AppProps> = ({ onClick }: AppProps) => (
     <div className={styles.row}>
       <TileWithBadge
         badge={logo}
+        image={promoImage}
+        title="Cashback"
+        onTitleClick={onClick}
+      >
+        Get cashback when shopping at participant retailers
+      </TileWithBadge>
+    </div>
+
+    <div className={styles.row}>
+      <TileWithBadge
+        badge={logo}
+        headerLevel={6}
         image={promoImage}
         title="Cashback"
         onTitleClick={onClick}

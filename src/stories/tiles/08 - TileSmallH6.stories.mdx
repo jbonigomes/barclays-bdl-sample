@@ -1,0 +1,28 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import graphic from '../../images/graphic_3.png'
+import TileSmall from '../../components/TileSmall'
+
+<Meta title="Tiles" />
+
+# Preview
+
+This tile uses a custom header level (h6).
+
+<Preview>
+  <Story name="08 - Small tile using h6">
+    <TileSmall
+      image={graphic}
+      headerLevel={6}
+      title="Overdraft"
+      onClick={action('clicked')}
+    >
+      Get an overdraft of up to <b>£2,000</b>
+    </TileSmall>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={TileSmall} />

@@ -393,6 +393,40 @@ Array [
         <div
           className="content"
         >
+          <div
+            className="left"
+          >
+            <img
+              alt="Tile graphic"
+              src="graphic_2.png"
+            />
+          </div>
+          <div>
+            <h6
+              className="lead"
+            >
+              Speed up login
+            </h6>
+            <div>
+              Save your details on the login screen and you'll only need your PINsentry device and card to login
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="tile"
+      >
+        <div
+          className="content"
+        >
           <img
             alt="Tile graphic"
             src="graphic_3.png"
@@ -405,6 +439,38 @@ Array [
               Overdraft
             </button>
           </h1>
+          Get an overdraft of up to 
+          <b>
+            £2,000
+          </b>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="tile"
+      >
+        <div
+          className="content"
+        >
+          <img
+            alt="Tile graphic"
+            src="graphic_3.png"
+          />
+          <h6>
+            <button
+              className="lead lightHover"
+              onClick={[MockFunction]}
+            >
+              Overdraft
+            </button>
+          </h6>
           Get an overdraft of up to 
           <b>
             £2,000
@@ -505,6 +571,41 @@ Array [
             alt="Tile graphic"
             src="promo_image.png"
           />
+        </div>
+        <div
+          className="content"
+        >
+          <h6>
+            <button
+              className="lead "
+              onClick={[MockFunction]}
+            >
+              1st card title goes here
+            </button>
+          </h6>
+          <div>
+            Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, nex quis iaculi. Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse romani.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="tile"
+      >
+        <div
+          className="cover"
+        >
+          <img
+            alt="Tile graphic"
+            src="promo_image.png"
+          />
           <div
             className="badge"
           >
@@ -574,6 +675,49 @@ Array [
               Cashback
             </button>
           </h1>
+          <div>
+            Get cashback when shopping at participant retailers
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="tile"
+      >
+        <div
+          className="cover"
+        >
+          <img
+            alt="Tile graphic"
+            src="promo_image.png"
+          />
+          <div
+            className="badge"
+          >
+            <img
+              alt="Badge"
+              src="logo.png"
+            />
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <h6>
+            <button
+              className="lead lightHover"
+              onClick={[MockFunction]}
+            >
+              Cashback
+            </button>
+          </h6>
           <div>
             Get cashback when shopping at participant retailers
           </div>

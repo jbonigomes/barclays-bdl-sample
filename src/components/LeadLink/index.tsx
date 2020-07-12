@@ -14,19 +14,15 @@ const LeadLink: React.SFC<LeadLinkProps> = ({
   onClick,
   lightHover,
   headerLevel,
-}: LeadLinkProps) => {
-  const DynamicHeader = dynamicHeader(headerLevel)
-
-  return (
-    <DynamicHeader>
-      <button
-        onClick={onClick}
-        className={`${styles.lead} ${lightHover ? styles.lightHover : ''}`}
-      >
-        {text}
-      </button>
-    </DynamicHeader>
+}: LeadLinkProps) =>
+  React.createElement(
+    dynamicHeader(headerLevel),
+    null,
+    React.createElement(
+      'button',
+      { onClick, className: `${styles.lead} ${lightHover ? styles.lightHover : ''}` },
+      text,
+    ),
   )
-}
 
 export default LeadLink

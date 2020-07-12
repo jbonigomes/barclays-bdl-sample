@@ -1,0 +1,28 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import graphic from '../../images/graphic_2.png'
+import TileWithGraphics from '../../components/TileWithGraphics'
+
+<Meta title="Tiles" />
+
+# Preview
+
+This tile uses a custom header level (h6).
+
+<Preview>
+  <Story name="07 - Tile with graphics using h6">
+    <TileWithGraphics
+      image={graphic}
+      headerLevel={6}
+      title="Speed up login"
+    >
+      Save your details on the login screen and you'll only need your PINsentry
+      device and card to login
+    </TileWithGraphics>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={TileWithGraphics} />

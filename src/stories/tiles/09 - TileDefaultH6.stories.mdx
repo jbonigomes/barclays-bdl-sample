@@ -1,0 +1,30 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import promoImage from '../../images/promo_image.png'
+import TileDefault from '../../components/TileDefault'
+
+<Meta title="Tiles" />
+
+# Preview
+
+This tile uses a custom header level (h6).
+
+<Preview>
+  <Story name="09 - Default tile using h6">
+    <TileDefault
+      headerLevel={6}
+      image={promoImage}
+      title="1st card title goes here"
+      onTitleClick={action('clicked')}
+    >
+      Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor
+      urna. Ut laoreet sodales nisi, nex quis iaculi. Vestibulum rutrum quam
+      vitae fringilla tincidunt. Suspendisse romani.
+    </TileDefault>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={TileDefault} />

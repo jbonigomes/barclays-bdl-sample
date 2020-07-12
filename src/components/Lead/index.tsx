@@ -7,14 +7,11 @@ type LeadProps = {
   headerLevel?: number,
 }
 
-const Lead: React.SFC<LeadProps> = ({ text, headerLevel }: LeadProps) => {
-  const DynamicHeader = dynamicHeader(headerLevel)
-
-  return (
-    <DynamicHeader className={`${styles.lead}`}>
-      {text}
-    </DynamicHeader>
+const Lead: React.SFC<LeadProps> = ({ text, headerLevel }: LeadProps) =>
+  React.createElement(
+    dynamicHeader(headerLevel),
+    { className: `${styles.lead}` },
+    text
   )
-}
 
 export default Lead

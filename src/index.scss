@@ -27,3 +27,9 @@ $dark-blue: #00395D;
     url(./fonts/expert-sans-light.woff) format('woff'),
     url(./fonts/expert-sans-light.woff2) format('woff2');
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-size: initial;
+}

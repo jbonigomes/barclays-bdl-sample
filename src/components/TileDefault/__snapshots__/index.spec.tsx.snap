@@ -18,14 +18,14 @@ exports[`Match snapshot 1`] = `
     <div
       className="content"
     >
-      <div>
+      <h1>
         <button
           className="lead "
           onClick={[MockFunction]}
         >
           title
         </button>
-      </div>
+      </h1>
       <div>
         Foo
       </div>
@@ -52,14 +52,14 @@ exports[`Match snapshot with button 1`] = `
     <div
       className="content"
     >
-      <div>
+      <h1>
         <button
           className="lead "
           onClick={[MockFunction]}
         >
           title
         </button>
-      </div>
+      </h1>
       <div>
         Foo
       </div>

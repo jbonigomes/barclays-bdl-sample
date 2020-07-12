@@ -1,8 +1,10 @@
 import React from 'react'
+
 import { render } from 'react-dom'
+
 import App from './components/App'
 
-export const identity = (e) => e
+import { identity } from './helpers'
 
 render(
   <React.StrictMode><App onClick={identity} /></React.StrictMode>,

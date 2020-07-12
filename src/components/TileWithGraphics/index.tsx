@@ -8,6 +8,7 @@ type TileWithGraphicsProps = {
   title: string,
   image: string,
   buttonText?: string,
+  headerLevel?: number,
   children: React.ReactNode,
   onClick?: (e: React.MouseEvent<HTMLElement>) => void,
 }
@@ -18,6 +19,7 @@ const TileWithGraphics: React.SFC<TileWithGraphicsProps> = ({
   onClick,
   children,
   buttonText,
+  headerLevel,
 }: TileWithGraphicsProps) => (
   <div className={styles.container}>
     <Tile>
@@ -25,9 +27,12 @@ const TileWithGraphics: React.SFC<TileWithGraphicsProps> = ({
         <div className={styles.left}>
           <img src={image} alt="Tile graphic" />
         </div>
+
         <div>
-          <Lead text={title} />
+          <Lead text={title} headerLevel={headerLevel}/>
+
           <div>{children}</div>
+
           {onClick && buttonText && (
             <Button
               linkOnDesktop

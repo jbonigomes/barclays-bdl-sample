@@ -8,6 +8,7 @@ type TileDefaultProps = {
   image: string,
   title: string,
   buttonText?: string,
+  headerLevel?: number,
   children: React.ReactNode,
   onTitleClick(e: React.MouseEvent<HTMLElement>): void,
   onButtonClick?: (e: React.MouseEvent<HTMLElement>) => void,
@@ -18,6 +19,7 @@ const TileDefault: React.SFC<TileDefaultProps> = ({
   title,
   children,
   buttonText,
+  headerLevel,
   onTitleClick,
   onButtonClick,
 }: TileDefaultProps) => (
@@ -26,9 +28,16 @@ const TileDefault: React.SFC<TileDefaultProps> = ({
       <div className={styles.cover}>
         <img src={image} alt="Tile graphic" />
       </div>
+
       <div className={styles.content}>
-        <LeadLink onClick={onTitleClick} text={title} />
+        <LeadLink
+          text={title}
+          onClick={onTitleClick}
+          headerLevel={headerLevel}
+        />
+
         <div>{children}</div>
+
         {onButtonClick && buttonText && (
           <Button
             type="primary"

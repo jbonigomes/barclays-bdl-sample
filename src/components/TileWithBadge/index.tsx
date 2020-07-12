@@ -9,6 +9,7 @@ type TileWithBadgeProps = {
   image: string,
   title: string,
   buttonText?: string,
+  headerLevel?: number,
   children: React.ReactNode,
   onTitleClick(e: React.MouseEvent<HTMLElement>): void,
   onButtonClick?: (e: React.MouseEvent<HTMLElement>) => void,
@@ -20,6 +21,7 @@ const TileWithBadge: React.SFC<TileWithBadgeProps> = ({
   title,
   children,
   buttonText,
+  headerLevel,
   onTitleClick,
   onButtonClick,
 }: TileWithBadgeProps) => (
@@ -27,13 +29,22 @@ const TileWithBadge: React.SFC<TileWithBadgeProps> = ({
     <Tile>
       <div className={styles.cover}>
         <img src={image} alt="Tile graphic" />
+
         <div className={styles.badge}>
           <img src={badge} alt="Badge" />
         </div>
       </div>
+
       <div className={styles.content}>
-        <LeadLink lightHover onClick={onTitleClick} text={title} />
+        <LeadLink
+          lightHover
+          text={title}
+          onClick={onTitleClick}
+          headerLevel={headerLevel}
+        />
+
         <div>{children}</div>
+
         {onButtonClick && buttonText && (
           <Button
             type="primary"

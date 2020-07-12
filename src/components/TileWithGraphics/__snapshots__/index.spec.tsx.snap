@@ -19,11 +19,11 @@ exports[`Match snapshot 1`] = `
         />
       </div>
       <div>
-        <div
+        <h1
           className="lead"
         >
           title
-        </div>
+        </h1>
         <div>
           Foo
         </div>
@@ -52,11 +52,11 @@ exports[`Match snapshot with button 1`] = `
         />
       </div>
       <div>
-        <div
+        <h1
           className="lead"
         >
           title
-        </div>
+        </h1>
         <div>
           Foo
         </div>

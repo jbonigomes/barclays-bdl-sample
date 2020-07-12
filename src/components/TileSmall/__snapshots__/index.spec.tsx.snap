@@ -14,14 +14,14 @@ exports[`Match snapshot 1`] = `
         alt="Tile graphic"
         src="image"
       />
-      <div>
+      <h1>
         <button
           className="lead lightHover"
           onClick={[MockFunction]}
         >
           title
         </button>
-      </div>
+      </h1>
       Foo
     </div>
   </div>

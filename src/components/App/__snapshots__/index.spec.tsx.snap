@@ -328,11 +328,11 @@ Array [
             />
           </div>
           <div>
-            <div
+            <h1
               className="lead"
             >
               See our tutorial
-            </div>
+            </h1>
             <div>
               Step by step illustrations on how to use Online Banking
             </div>
@@ -368,11 +368,11 @@ Array [
             />
           </div>
           <div>
-            <div
+            <h1
               className="lead"
             >
               Speed up login
-            </div>
+            </h1>
             <div>
               Save your details on the login screen and you'll only need your PINsentry device and card to login
             </div>
@@ -397,14 +397,14 @@ Array [
             alt="Tile graphic"
             src="graphic_3.png"
           />
-          <div>
+          <h1>
             <button
               className="lead lightHover"
               onClick={[MockFunction]}
             >
               Overdraft
             </button>
-          </div>
+          </h1>
           Get an overdraft of up to 
           <b>
             £2,000
@@ -433,14 +433,14 @@ Array [
         <div
           className="content"
         >
-          <div>
+          <h1>
             <button
               className="lead "
               onClick={[MockFunction]}
             >
               1st card title goes here
             </button>
-          </div>
+          </h1>
           <div>
             Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, nex quis iaculi. Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse romani.
           </div>
@@ -474,14 +474,14 @@ Array [
         <div
           className="content"
         >
-          <div>
+          <h1>
             <button
               className="lead "
               onClick={[MockFunction]}
             >
               1st card title goes here
             </button>
-          </div>
+          </h1>
           <div>
             Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, nex quis iaculi. Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse romani.
           </div>
@@ -517,14 +517,14 @@ Array [
         <div
           className="content"
         >
-          <div>
+          <h1>
             <button
               className="lead lightHover"
               onClick={[MockFunction]}
             >
               Cashback
             </button>
-          </div>
+          </h1>
           <div>
             Get cashback when shopping at participant retailers
           </div>
@@ -566,14 +566,14 @@ Array [
         <div
           className="content"
         >
-          <div>
+          <h1>
             <button
               className="lead lightHover"
               onClick={[MockFunction]}
             >
               Cashback
             </button>
-          </div>
+          </h1>
           <div>
             Get cashback when shopping at participant retailers
           </div>
